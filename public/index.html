@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🎆 New Year 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<center> <h1 id="title">🎉 New Year 2026 Countdown 🎉</h1>
+<h2 id="countdown"></h2> </center>
+
+<div class="room">
+  <input id="username" placeholder="Your name">
+  <select id="room">
+    <option value="global">🌍 Global</option>
+    <option value="friends">👫 Friends</option>
+    <option value="family">👨‍👩‍👧‍👦 Family</option>
+  </select>
+  <button onclick="joinRoom()">Join Room</button>
+</div>
+
+<div class="chat">
+  <div id="chatBox"></div>
+  <input id="msg" placeholder="Type message...">
+  <button onclick="sendMessage()">Send</button>
+</div>
+
+<canvas id="fireworks"></canvas>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
